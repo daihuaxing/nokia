@@ -1,0 +1,21 @@
+{
+  "earphone":[{"id":101,"name":"Nokia/诺基亚 活性无线耳机","newPrice":299.00,"oldPrice":null,"img":"img/headset.jpg","size":"铝质耳机","pre":true}],
+  "Classic":[
+    {"id":201,"name":"Nokia/诺基亚 8110 4G版 黄色","newPrice":499.00,"oldPrice":null,"img":"img/img201.jpg","size":"2.4英寸屏","pre":false},
+    {"id":202,"name":"Nokia/诺基亚 8110 4G版 黑色","newPrice":499.00,"oldPrice":null,"img":"img/img202.jpg","size":"2.4英寸屏","pre":false},
+    {"id":203,"name":"Nokia/诺基亚 3310 移动4G版","newPrice":399.00,"oldPrice":459.00,"img":"img/img203.jpg","size":"2.4英寸屏","pre":false},
+    {"id":204,"name":"Nokia/诺基亚 新130","newPrice":179.00,"oldPrice":199.00,"img":"img/img204.jpg","size":"1.8英寸屏","pre":false},
+    {"id":205,"name":"Nokia/诺基亚 230 DS","newPrice":399.00,"oldPrice":null,"img":"img/img205.jpg","size":"2.8英寸屏","pre":false},
+    {"id":206,"name":"Nokia/诺基亚 3310","newPrice":399.00,"oldPrice":null,"img":"img/img206.jpg","size":"2.4英寸屏","pre":false},
+    {"id":207,"name":"Nokia/诺基亚 216 DS","newPrice":299.00,"oldPrice":null,"img":"img/img207.jpg","size":"2.4英寸屏","pre":false},
+    {"id":208,"name":"Nokia/诺基亚 新105 DS","newPrice":159.00,"oldPrice":null,"img":"img/img208.jpg","size":"1.8英寸屏","pre":false},
+    {"id":209,"name":"Nokia/诺基亚 新105","newPrice":149.00,"oldPrice":null,"img":"img/img209.jpg","size":"1.8英寸屏","pre":false}
+  ],
+  "Intelligence":[
+    {"id":301,"name":"Nokia/诺基亚 X7","newPrice":1699.00,"oldPrice":null,"img":"img/img301.jpg","size":"新品开售","pre":false},
+    {"id":302,"name":"Nokia/诺基亚 8 Sirocco","newPrice":4699.00,"oldPrice":null,"img":"img/img302.jpg","size":"2k双曲面屏5.5英寸OLED超清屏幕","pre":false},
+    {"id":303,"name":"Nokia/诺基亚 7 Plus","newPrice":1899.00,"oldPrice":2299.00,"img":"img/img303.jpg","size":"6英寸全面屏","pre":false},
+    {"id":304,"name":"Nokia/诺基亚  X6","newPrice":1299.00,"oldPrice":1499.00,"img":"img/img304.jpg","size":"5.8英寸全面屏","pre":false},
+    {"id":305,"name":"Nokia/诺基亚 X5","newPrice":999.00,"oldPrice":null,"img":"img/img305.jpg","size":"Helio P60高性能CPU","pre":false}
+  ]
+}

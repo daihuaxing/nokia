@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    @charset 'utf-8';
+    html,body,ul,li,ol,dl,dd,dt,p,h1,h2,h3,h4,h5,h6,form,fieldset,legend,img,input{margin:0;padding:0;}
+    body{font-family:'微软雅黑';}
+    h1,h2,h3,h4,h5,h6{font-size:16px;font-weight:normal;}
+    ul,ol,li{list-style:none;}
+    a,u{text-decoration:none;}
+    b,strong{font-weight:normal;}
+    em,i{font-style:normal;}
+    img{border:0;display:block;}
+    .clear_fix:after{content:'.';clear:both;height:0;overflow: hidden;display:block;visibility:hidden;}
+    .clear_fix{zoom:1;}
+    html,body{
+        height: 100%;
+    }
+    .no_padding{
+        padding:0;
+    }
+    body{
+        font-size: 16px;
+        background-color: rgb(247, 247, 247);
+        font-family: "HmdPureText","Microsoft JhengHei","Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei",Arial,sans-serif!important;
+
+    }
+    .header{
+        height:1.1rem ;
+        font-size: 28px;
+        font-weight: bold;
+        color: #3c3c3c;
+        text-align: center;
+        line-height: 1.1rem;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .content{
+        margin: 1rem auto 0;
+        width: 4.3rem;
+        height: 6.5rem;
+    }
+    #register{
+        height: 5.51rem;
+        width: 4.3rem;
+    }
+    .sel{
+        height: 0.5rem;
+        width: 1.935rem;
+        margin-bottom: 0.2rem;
+        color: #666;
+        border: 1px solid #dcdcdc;
+    }
+    .sel option{
+        font-size: 18px;
+    }
+    #mobile{
+        height: 0.5rem;
+        float:right;
+        color: #666;
+        border: 1px solid #dcdcdc;
+        font-size: 18px;
+        text-indent: 0.12rem;
+    }
+    .mobile_password,.mobile_password_confirm{
+        display: block;
+        width: 100%;
+        height: 0.5rem;
+        margin-bottom: 0.2rem;
+        font-size: 0.18rem;
+        text-indent: 0.12rem;
+        color: #666;
+        border: 1px solid #dcdcdc!important;
+        box-sizing: border-box;
+    }
+    .password-hint{
+        margin-left: 0.2rem;
+        color: #000;
+        font-size: 14px;
+    }
+    .containerL{
+        display: block;
+        position: relative;
+        padding-left: 35px;
+        margin-bottom: 12px;
+        cursor: pointer;
+    }
+    .containerL input {
+        position: absolute;
+        top: 5px;
+        left: 0;
+        height: 30px;
+        width: 30px;
+        background-color: white;
+        border: 1px black solid;
+    }
+    .LoginA {
+        color: #4d5766!important;
+    }
+    label{
+        font-size: 18px;
+        color: #333;
+        cursor: pointer;
+        z-index: 1;
+    }
+    .UserAgree-hint {
+        color: #000;
+        font-size: 14px;
+    }
+    #RegistrySiteTerms tr{
+        height:0.6rem;
+        padding: 1px;
+    }
+    .disabledbutton{
+        opacity: .4;
+        pointer-events: none;
+    }
+    .box{
+        margin:0.3rem 0;
+    }
+    .LangNextStep{
+        width: 100%;
+        height: 0.6rem;
+        margin:0 auto;
+        text-indent: initial;
+        border: 0;
+        border-radius: 0.5rem;
+        color: #FFF;
+        background: #124191;
+        cursor: pointer;
+    }
+    .terms{
+        font-size: 12px;
+    }
+    .terms a{
+        color: #4d5766;
+    }
+    .terms a:hover{
+        color: #bec8d2;
+    }
+</style>
+<script src="js/jquery.min.js"></script>
+
+<body>
+        <div class="header">账号注册</div>
+        <div class="content">
+            <form action="" method="" id="register">
+                <div>
+                    <select class="sel">
+                        <option value="+86" selected>中国(+86)</option>
+                    </select>
+                    <input type="tel" maxlength="12" placeholder="请输入手机号码" id="mobile" name="mobile">
+                </div>
+                <input type="password" maxlength="15" placeholder="请输入密码" class="mobile_password" name="mobile_password">
+                <div class="password-hint">
+                    密码长度须介于8-15字并至少包含两种下列字元的组合：字母，数字或特殊字符
+                </div>
+                <input type="password" maxlength="15" placeholder="请输入确认密码" class="mobile_password_confirm" name="mobile_password_confirm">
+                <table id="RegistrySiteTerms" border="0" width="100%" style="margin-bottom:0.1rem;margin-top:0.28rem;">
+                    <tbody>
+                    <tr>
+                        <td align="left" valign="top">
+                            <label class="containerL">
+                                <input type="checkbox" id="UserAgree" value="Y">
+                            </label>
+                        </td>
+                        <td align="left" valign="top">
+                            <label for="UserAgree">
+                                我已阅读并同意
+                                <a class="LoginA" target="_blank" href="#">
+                                    使用条款</a>
+                                <p class="UserAgree-hint">本服务仅适用于诺基亚手机商城</p>
+                            </label>
+                        </td>
+                    </tr><tr>
+                        <td align="left" valign="top">
+                            <label class="containerL">
+                                <input type="checkbox" id="agreeNews" value="Y">
+                            </label>
+                        </td>
+                        <td align="left" valign="top">
+                            <label for="agreeNews">
+                                我愿意收到诺基亚手机的产品新闻及相关信息；
+                                我也能随时取消
+                            </label>
+                        </td>
+                    </tr>
+                    </tbody></table>
+                <div class="disabledbutton box">
+                    <input type="button" value="下一步" class="LangNextStep" id="LangNextStep" name="LangNextStep">
+                </div>
+                <p class="terms" align="center">
+                    继续流程，即表示您同意
+                    <a  target="_blank" href="#">
+                        HMD Global's 隐私权条款</a>
+                </p>
+            </form>
+        </div>
+        <script>
+            (function () {
+                var html = document.documentElement;
+
+                function onWindowResize() {
+                    html.style.fontSize = html.getBoundingClientRect().width / 16 + 'px';
+                }
+                window.addEventListener('resize', onWindowResize);
+                onWindowResize();
+            })();
+            $("#mobile").on("blur",checkPhone);
+            function checkPhone(){
+                var phone = document.getElementById('mobile').value;
+                if(!(/^1[34578]\d{9}$/.test(phone))){
+                    document.getElementById('mobile').value = "";
+                    return false;
+                }else {
+
+                }
+            }
+            $(".mobile_password").on("blur",checkpassword);
+            function checkpassword() {
+                var password = document.getElementsByClassName("mobile_password")[0].value;
+                if(!(/^(?![\d]+$)(?![a-zA-Z]+$)(?![^\da-zA-Z]+$).{8,15}$/.test(password))){
+                    document.getElementsByClassName("mobile_password")[0].value = "";
+                    return false;
+                }
+            }
+            $(".mobile_password").on("blur",checkpassword_confirm);
+            $(".mobile_password_confirm").on("blur",checkpassword_confirm);
+            function checkpassword_confirm() {
+                var password = document.getElementsByClassName("mobile_password")[0].value;
+                var password_confirm = document.getElementsByClassName("mobile_password_confirm")[0].value;
+                if(password !== password_confirm){
+                    document.getElementsByClassName("mobile_password_confirm")[0].value = "";
+                    return false;
+                }
+            }
+            
+            $("#register").on("click",function () {
+               if($("#UserAgree").is(":checked") && $("#agreeNews").is(":checked")&&
+                   document.getElementById('mobile').value && document.getElementsByClassName("mobile_password")[0].value
+                   &&document.getElementsByClassName("mobile_password_confirm")[0].value ) {
+                   $(".box").removeClass("disabledbutton");
+               }else{
+                   $(".box").addClass("disabledbutton");
+               }
+            });
+            $("#LangNextStep").on("click",function(e){
+                e.preventDefault();
+                $.ajax({
+                    type:"post",
+                    url:"",
+                    data:$("form").serialize(),
+                    success:function (res,status,xhr) {
+                        console
+                    }
+                })
+            })
+
+
+        </script>
+</body>
+</html>
